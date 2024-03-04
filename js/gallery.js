@@ -63,10 +63,6 @@ const images = [
     description: "Lighthouse Coast Sea",
   },
 ];
-function selectImage(event) {
-  event.preventDefault();
-
-}
 
 
 const galleryList = document.querySelector(".gallery");
@@ -93,6 +89,7 @@ function pushItems() {
 }
 
 function selectImage(event) {
+  event.preventDefault();  
   if (event.target.nodeName !== "IMG") {
     return;
   } else {
