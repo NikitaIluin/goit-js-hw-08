@@ -63,6 +63,11 @@ const images = [
     description: "Lighthouse Coast Sea",
   },
 ];
+function selectImage(event) {
+  event.preventDefault();
+
+}
+
 
 const galleryList = document.querySelector(".gallery");
 const fragment = document.createDocumentFragment();
